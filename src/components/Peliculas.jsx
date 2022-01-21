@@ -80,22 +80,19 @@ export default function Product({pelicula}) {
                         
                     </div>
                     </Link>:
-                    <Link to={'/login'} ><div className='' onClick={()=>{
-                        alert("Por favor registrate o logueate para ver más datos de la Película")
-                    }} >
-                        <img className='rounded-lg h-[320px]  mb-0 'id="titulo" src={pelicula.pelicula.img} />
-                        <section className='p-5 '>
-                            <p className='text-sm font-light mb-3 text-white mt-0'>{pelicula.pelicula.nombre}</p>
-                            
+                    <Link to={'/login'} ><div className='xs:h-80 sm:h-auto sm:max-h-96'  >
+                    <div className='flex m-auto'>
+                        <img className='rounded-lg sm:h-[320px] xs:h-[220px] w-screen  mb-0 sm:max-h-72 xs:max-h-48 'id="titulo" alt={pelicula.pelicula.nombre} src={pelicula.pelicula.img} />
+                    </div>
+                    
+                    <section className='p-5 '>
 
-                            
-                            
-                            
-                            
+                        <p className='text-sm font-light mb-3 text-white mt-0'>{pelicula.pelicula.nombre}</p>
                         
-                            
-                        </section>
                         
+
+                    </section>
+                    
                     </div>
                     </Link>
                     }
