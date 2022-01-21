@@ -76,7 +76,7 @@ export default function FiltroId({pelicula}) {
                                 <div className='grid grid-cols-2 2xl:col-span-3 xl:col-span-4   sm:col-span-3 xs:col-span-3'>
                                     <img className=' sm:col-span-2 rounded-lg sm:h-96 m-2 xl:ml-32 lg:ml-0 xs:ml-0 2xl:ml-0 border border-white' id="titulo" alt={pelicula.pelicula.nombre} src={pelicula.pelicula.img} />
                                     <div className='sm:hidden'>
-                                        <h1 className=' font-extrabold  text-5xl text-white mb-10 ml-6 mt-10'>{pelicula.pelicula.nombre}</h1>
+                                        <h1 className=' font-extrabold  text-2xl text-white mb-10 ml-6 mt-5 max-w-36'>{pelicula.pelicula.nombre}</h1>
                                         <p className=' mb-5 text-sm text-white ml-6 '>Genero: {pelicula.pelicula.genero}</p>
                                         <p className='text-white text-sm  sm:ml-auto mb-5 ml-6'>Ranking: {rankin}pts/5</p>
                                     </div>
