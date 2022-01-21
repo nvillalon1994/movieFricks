@@ -3,7 +3,7 @@ import {  useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import UserContext from '../contextt/userContext'
 import { motion } from 'framer-motion'
-import { type } from '@testing-library/user-event/dist/type'
+
 
 
 export default function Product({pelicula}) {
@@ -63,7 +63,7 @@ export default function Product({pelicula}) {
             <div onMouseOver={tomarID} onClick={filtrarId2} className='flex m-auto  sm:ml-10' >
                 
                 
-                <article onMouseOver={mostrarDescripción} onMouseOut={quitarDescripción} className='flex flex-row sm:w-[200px] xs:w-[150px]  xs:max-h-96  shadow-lg hover:shadow-2xl bg-gradient-to-b from-sky-800 via-cyan-600 to-black-500"  rounded-lg justify-center ' >
+                <article onMouseOver={mostrarDescripción} onMouseOut={quitarDescripción} className='flex flex-row sm:w-[200px] xs:w-[150px]  xs:max-h-64 sm:max-h-96 shadow-lg hover:shadow-2xl bg-gradient-to-b from-sky-800 via-cyan-600 to-black-500"  rounded-lg justify-center ' >
                     
                     {user?<Link  to={'/pelicula'}><div className='xs:h-80 sm:h-auto sm:max-h-96'  >
                         <div className='flex m-auto'>

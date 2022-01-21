@@ -50,7 +50,7 @@ export default function Home() {
                                         peliculas.map(pelicula=><Peliculas key ={pelicula.id} pelicula={pelicula}/>)
                                     }
                                 </div>
-                            </div>:<div className='col-span-6'> <div className='grid 2xl:grid-cols-5 grid-cols-4  gap-5 max-w-7xl mx-auto'>
+                            </div>:<div className='col-span-6'> <div className='grid 2xl:grid-cols-5 xl:grid-cols-4  lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-2 gap-5 xl:max-w-7xl lg:max-w-5xl xl:mx-auto'>
                             {filtroPeticion.map(pelicula=><Peliculas pelicula={pelicula}></Peliculas>)}
                             </div></div>}
                         </div>

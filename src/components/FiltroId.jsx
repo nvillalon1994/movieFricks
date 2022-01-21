@@ -33,7 +33,7 @@ export default function FiltroId({pelicula}) {
         }else{
         const payload =comentarios;
         // setCom(payload)
-        const updateCom = await updateDoc(newComentario,{
+         await updateDoc(newComentario,{
             com:arrayUnion(payload)
         })
         alert("Su comentario sera evaluado y luego publicado. Muchas gracias por su aporte")

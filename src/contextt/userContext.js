@@ -175,7 +175,7 @@ const UserProvider =({children})=>{
 
         }
     }
-    const data ={login,logout,user,entrar,loginEmail,loginPassword,setLoginEmail,setLoginPassword,setNombre,setAño,setColors,setDescripción,setDuracion,setID,setGenero,setTrailer,setImg,handleNew,handleDelete,filtroPeticion,actualizarFiltroPeticion,peliSola,setPeliSola,filtrarId,show,setShow,actualizarFiltroPeticionId, setShowPeliSola,filtroPeticionId,showPeliSola,filtrarNombre,input,setInput,filtrarCategoria,setMostrarCategoria,setCategoria,mostrarCategoria,variants, filtrarAño, setInput2,filtrarAño}
+    const data ={login,logout,user,entrar,loginEmail,loginPassword,setLoginEmail,setLoginPassword,setNombre,setAño,setColors,setDescripción,setDuracion,setID,setGenero,setTrailer,setImg,handleNew,handleDelete,filtroPeticion,actualizarFiltroPeticion,peliSola,setPeliSola,filtrarId,show,setShow,actualizarFiltroPeticionId, setShowPeliSola,filtroPeticionId,showPeliSola,filtrarNombre,input,setInput,filtrarCategoria,setMostrarCategoria,setCategoria,mostrarCategoria,variants, filtrarAño, setInput2,filtrarAño,colors}
     return(
         <UserContext.Provider value ={data}>
             {children}

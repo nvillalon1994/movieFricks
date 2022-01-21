@@ -22,7 +22,7 @@ export default function Navbar() {
             {/* //div que se ve */}
             <div className=''>
             <div className='flex justify-between   2xl:max-w-7xl  xl:ml-28 xl:mr-44 2xl:m-auto xs:hidden lg:flex '>
-                <Link onMouseOver={()=>setCategoria("")} onClick={filtrarCategoria} to={"/"}><img className=' lg:w-32 xl:ml-12 2xl:ml-6 xs:ml-0 xs:w-28 ' src={logo} alt="" /></Link>
+                <a onMouseOver={()=>setCategoria("")} onClick={filtrarCategoria} href={"/"}><img className=' lg:w-32 xl:ml-12 2xl:ml-6 xs:ml-0 xs:w-28 ' src={logo} alt="" /></a>
                 
                 <div className=' flex  w-6  m-2   ' >
                                 <button className='  font-bold text-lg  text-white hover:text-cyan-400 -ml-5 mt-8' onClick={()=>{setMostrarCategoria(!mostrarCategoria)}}>Categorias ↧</button>
