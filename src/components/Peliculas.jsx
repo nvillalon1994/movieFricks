@@ -80,7 +80,7 @@ export default function Product({pelicula}) {
                         
                     </div>
                     </Link>:
-                    <Link to={'/login'} ><div className='xs:h-80 sm:h-auto sm:max-h-96'  >
+                    <Link onClick={()=>alert("Logueate o Registrate para ver más información sobre la pelicula")} to={'/login'} ><div className='xs:h-80 sm:h-auto sm:max-h-96'  >
                     <div className='flex m-auto'>
                         <img className='rounded-lg sm:h-[320px] xs:h-[220px] w-screen  mb-0 sm:max-h-72 xs:max-h-48 'id="titulo" alt={pelicula.pelicula.nombre} src={pelicula.pelicula.img} />
                     </div>
